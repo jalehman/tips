@@ -25,10 +25,12 @@ class SettingsViewController: UIViewController, UITableViewDelegate {
     
     // MARK: VC Lifecycle
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
         //addTipPercentageButton.enabled = false
-        addTipPercentageButton.hidden = true
+        
+        addTipPercentageButton.hidden = true        
         
         newTipPercentageField.keyboardAppearance = .Dark
         

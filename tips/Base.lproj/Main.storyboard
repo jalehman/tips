@@ -127,7 +127,7 @@
                     <navigationItem key="navigationItem" title="Tip Calculator" id="pwH-uk-vIP">
                         <barButtonItem key="rightBarButtonItem" title="Settings" id="Ndi-Fb-Brx">
                             <connections>
-                                <segue destination="y6O-HB-dqZ" kind="push" identifier="settingsModal" id="OfZ-3N-tQE"/>
+                                <segue destination="y6O-HB-dqZ" kind="modal" identifier="settingsModal" id="OfZ-3N-tQE"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -154,7 +154,7 @@
             </objects>
             <point key="canvasLocation" x="566" y="993"/>
         </scene>
-        <!--Settings-->
+        <!--Settings View Controller-->
         <scene sceneID="4Ly-Yr-2vd">
             <objects>
                 <viewController id="y6O-HB-dqZ" customClass="SettingsViewController" customModule="tips" customModuleProvider="target" sceneMemberID="viewController">
@@ -195,6 +195,19 @@
                                     <outlet property="delegate" destination="y6O-HB-dqZ" id="c9S-36-Ous"/>
                                 </connections>
                             </tableView>
+                            <navigationBar contentMode="scaleToFill" id="eew-EJ-KJY">
+                                <rect key="frame" x="0.0" y="21" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Settings" id="xbE-6I-cDz">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="7eG-bz-1Di">
+                                            <connections>
+                                                <action selector="done:" destination="y6O-HB-dqZ" id="HpN-da-kdA"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="0.40784313725490196" green="0.51764705882352946" blue="0.77254901960784317" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
@@ -203,13 +216,6 @@
                             <outletCollection property="gestureRecognizers" destination="KdL-ye-vAh" appends="YES" id="u0Y-Ic-Jey"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="Settings" id="xbE-6I-cDz">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="7eG-bz-1Di">
-                            <connections>
-                                <action selector="done:" destination="y6O-HB-dqZ" id="HpN-da-kdA"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
                     <connections>
                         <outlet property="addTipPercentageButton" destination="a2b-S6-rky" id="RhR-Ss-lLQ"/>
                         <outlet property="newTipPercentageField" destination="Djs-Ar-Pxm" id="JEP-xo-f2h"/>
@@ -224,7 +230,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1011" y="993"/>
+            <point key="canvasLocation" x="1087" y="993"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zZ0-Tw-tHx">

@@ -31,7 +31,7 @@ class ViewController: UIViewController, SettingsViewControllerDelegate {
     private var originalSettings: Settings!
     
     // MARK: UIViewController Lifecycle
-    
+            
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -56,10 +56,6 @@ class ViewController: UIViewController, SettingsViewControllerDelegate {
 
     }
     
-    override func viewWillDisappear(animated: Bool) {
-        println("here")
-    }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -79,7 +75,7 @@ class ViewController: UIViewController, SettingsViewControllerDelegate {
         reloadTipControl()
         updateTipAndTotal() // in the event that the default changed
         
-        controller.navigationController?.popViewControllerAnimated(true)
+        controller.dismissViewControllerAnimated(true, completion: nil)
     }
     
     // MARK: Actions
