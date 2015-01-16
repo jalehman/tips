@@ -174,7 +174,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate {
     }
     
     private func addTipPercentage(tipPercent: TipPercent) {
-        //1. ensure that the tip percent is unique
+        // ensure that the tip percent is unique
         let exists = settings.percentages.filter { $0.percentage == tipPercent.percentage }.count == 1
         
         if !exists {

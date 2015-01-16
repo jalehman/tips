@@ -50,9 +50,6 @@ class ViewController: UIViewController, SettingsViewControllerDelegate {
             billField.becomeFirstResponder()
         }
         
-        
-
-        
         splitBetweenLabel.text = "\(settings.splitBetween)"
         
         billField.keyboardAppearance = .Dark
@@ -122,7 +119,6 @@ class ViewController: UIViewController, SettingsViewControllerDelegate {
     
     // MARK: Private/Internal
     
-    //TODO: Better naming
     func slideUIUp() {
         uiActive = true
         UIView.animateWithDuration(uiSlideDuration, animations: {
