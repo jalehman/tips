@@ -13,10 +13,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        applyStyling()
+        
         return true
+    }
+    
+    func applyStyling() {
+        let textColor: UIColor = UIColor(red: 0.843, green: 0.875, blue: 0.953, alpha: 1)
+        
+        // Navbar
+        let medBlue = UIColor(red: 0.059, green: 0.2, blue: 0.525, alpha: 1)
+        UINavigationBar.appearance().barTintColor = medBlue
+        UISegmentedControl.appearance().tintColor = medBlue
+        
+        UITextField.appearance().tintColor = textColor
+        
+        // Nav buttons
+        let textAttributes = [NSForegroundColorAttributeName: textColor]
+        UISegmentedControl.appearance().setTitleTextAttributes(textAttributes, forState: UIControlState.Selected)
+        UISegmentedControl.appearance().setTitleTextAttributes(textAttributes, forState: UIControlState.Normal)
+        // Set this to make the back arrows white.
+        UINavigationBar.appearance().tintColor = textColor
+        UIBarButtonItem.appearance().setTitleTextAttributes(textAttributes, forState: UIControlState.Normal)
+        UINavigationBar.appearance().titleTextAttributes = textAttributes
     }
 
     func applicationWillResignActive(application: UIApplication) {

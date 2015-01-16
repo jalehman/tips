@@ -13,6 +13,9 @@
 		2F0C7FB81A66BC4500DA14E2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F0C7FB71A66BC4500DA14E2 /* Images.xcassets */; };
 		2F0C7FBB1A66BC4500DA14E2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F0C7FB91A66BC4500DA14E2 /* LaunchScreen.xib */; };
 		2F0C7FC71A66BC4500DA14E2 /* tipsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0C7FC61A66BC4500DA14E2 /* tipsTests.swift */; };
+		2F0C7FD11A66E9C600DA14E2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0C7FD01A66E9C500DA14E2 /* SettingsViewController.swift */; };
+		2F0C7FD31A66EBD200DA14E2 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0C7FD21A66EBD200DA14E2 /* Settings.swift */; };
+		2F0C7FD51A6705F700DA14E2 /* TipPercent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0C7FD41A6705F700DA14E2 /* TipPercent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		2F0C7FC01A66BC4500DA14E2 /* tipsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tipsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F0C7FC51A66BC4500DA14E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F0C7FC61A66BC4500DA14E2 /* tipsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tipsTests.swift; sourceTree = "<group>"; };
+		2F0C7FD01A66E9C500DA14E2 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		2F0C7FD21A66EBD200DA14E2 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		2F0C7FD41A6705F700DA14E2 /* TipPercent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipPercent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +84,10 @@
 			isa = PBXGroup;
 			children = (
 				2F0C7FB01A66BC4500DA14E2 /* AppDelegate.swift */,
-				2F0C7FB21A66BC4500DA14E2 /* ViewController.swift */,
 				2F0C7FB41A66BC4500DA14E2 /* Main.storyboard */,
+				2F0C7FB21A66BC4500DA14E2 /* ViewController.swift */,
+				2F0C7FD01A66E9C500DA14E2 /* SettingsViewController.swift */,
+				2F0C7FD61A67060100DA14E2 /* Models */,
 				2F0C7FB71A66BC4500DA14E2 /* Images.xcassets */,
 				2F0C7FB91A66BC4500DA14E2 /* LaunchScreen.xib */,
 				2F0C7FAE1A66BC4500DA14E2 /* Supporting Files */,
@@ -110,6 +118,15 @@
 				2F0C7FC51A66BC4500DA14E2 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2F0C7FD61A67060100DA14E2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2F0C7FD21A66EBD200DA14E2 /* Settings.swift */,
+				2F0C7FD41A6705F700DA14E2 /* TipPercent.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,8 +229,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F0C7FD51A6705F700DA14E2 /* TipPercent.swift in Sources */,
 				2F0C7FB31A66BC4500DA14E2 /* ViewController.swift in Sources */,
 				2F0C7FB11A66BC4500DA14E2 /* AppDelegate.swift in Sources */,
+				2F0C7FD31A66EBD200DA14E2 /* Settings.swift in Sources */,
+				2F0C7FD11A66E9C600DA14E2 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
