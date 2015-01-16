@@ -14,7 +14,7 @@ I didn't check the submission instructions until nearly finished with the applic
 ### Required
 
 + The base tip calculator is complete -- it calculates the tip and total from a bill amount and selected tip percentage.
-+ The settings page is implemented as a modal transition and allows different tip percentages to be selected as default. This is implemented in a UITableView, where the selected cell (.Checkmark) is the default.
++ The settings page is implemented as a modal transition and allows different tip percentages to be selected as default. This is implemented in a UITableView, where the selected cell (`.Checkmark`) is the default.
 
 NOTE: With the settings page implemented as a modal, I have been unable to get the status bar to assume the same tint color as the navigation bar. Things work as intended when implemented as a Push transition.
 
